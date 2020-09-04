@@ -1,0 +1,7 @@
+com\cmos\dubbo\provider\configuration\DubboConfiguration.class
+com\cmos\dubbo\provider\service\impl\ProviderServiceImpl.class
+com\cmos\dubbo\provider\service\annotation\ProviderServiceAnnotationImpl.class
+com\cmos\dubbo\provider\service\ProviderService.class
+com\cmos\dubbo\provider\AppAnnotation.class
+com\cmos\dubbo\provider\service\annotation\ProviderServiceAnnotation.class
+com\cmos\dubbo\provider\App.class

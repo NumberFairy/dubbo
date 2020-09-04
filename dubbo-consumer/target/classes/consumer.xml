@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="consumer" owner="cmos" />
+
+    <dubbo:registry address="N/A" />
+    <!-- 注册中心配置 -->
+<!--    <dubbo:registry address="zookeeper://localhost:2181" check="false" />-->
+
+
+    <!-- 生成一个远程调用的调用代理    （这里是点对点的方式） -->
+    <dubbo:reference
+            id="providerService"
+            interface="com.cmos.dubbo.provider.service.ProviderService"
+            url="dubbo://192.168.91.109:20880/com.cmos.dubbo.provider.service.ProviderService"/>
+<!--    <dubbo:reference-->
+<!--            interface="com.cmos.dubbo.provider.service.ProviderService"-->
+<!--            id="providerService" />-->
+
+</beans>
